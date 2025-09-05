@@ -48,6 +48,13 @@
 
   });
 
+  document.querySelectorAll('.faq-item .faq-header').forEach(header => {
+    header.addEventListener('click', function () {
+      const parent = this.closest('.faq-item');
+      parent.classList.toggle('active');
+    });
+  });
+
   /**
    * Toggle mobile nav dropdowns
    */
