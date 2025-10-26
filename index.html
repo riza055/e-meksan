@@ -174,58 +174,67 @@
 
     </section><!-- /About Section -->
 
-    <section id="clients" class="clients section">
+   <section id="clients" class="clients section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": { "delay": 3000 },
+          "pagination": { "el": ".swiper-pagination", "clickable": true },
+          "breakpoints": {
+            "320": { "slidesPerView": 1, "spaceBetween": 30 },
+            "768": { "slidesPerView": 2, "spaceBetween": 30 },
+            "1200": { "slidesPerView": 3, "spaceBetween": 30 }
+          }
+        }
+      </script>
 
-        <div class="row gy-4">
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="client-item Demirdöküm">
-              <img src="assets/emeksan/demirdokum.png" class="img-fluid" alt="Client 1">
-            </div>
-          </div>
+      <div class="swiper-wrapper">
 
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="150">
-            <div class="client-item Vaillant">
-              <img src="assets/emeksan/vaillant.png" class="img-fluid" alt="Client 2">
-            </div>
-          </div>
+        <div class="swiper-slide brand-slide">
+          <img src="assets/img/emeksan/demirdokum.png" alt="Demirdöküm">
+          <div class="brand-name">Demirdöküm</div>
+        </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="client-item Warmhaus">
-              <img src="assets/emeksan/warmhaus.png" class="img-fluid" alt="Client 3">
-            </div>
-          </div>
+        <div class="swiper-slide brand-slide">
+          <img src="assets/img/emeksan/vaillant.webp" alt="Vaillant">
+          <div class="brand-name">Vaillant</div>
+        </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="250">
-            <div class="client-item Kalde Vana ">
-              <img src="assets/emeksan/kalde.png" class="img-fluid" alt="Client 4">
-            </div>
-          </div>
+        <div class="swiper-slide brand-slide">
+          <img src="assets/img/emeksan/warmhaus.png" alt="Warmhaus">
+          <div class="brand-name">Warmhaus</div>
+        </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="client-item Borusan Boru">
-              <img src="assets/emeksan/borusan-boru.png" class="img-fluid" alt="Client 5">
-            </div>
-          </div>
+        <div class="swiper-slide brand-slide">
+          <img src="assets/img/emeksan/kalde.png" alt="Kalde Vana">
+          <div class="brand-name">Kalde Vana</div>
+        </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
-            <div class="client-item Fujiyama Soba">
-              <img src="assets/emeksan/fujiyama.png" class="img-fluid" alt="Client 6">
-            </div>
-          </div>
+        <div class="swiper-slide brand-slide">
+          <img src="assets/img/emeksan/borusan-boru.png" alt="Borusan Boru">
+          <div class="brand-name">Borusan Boru</div>
+        </div>
 
+        <div class="swiper-slide brand-slide">
+          <img src="assets/img/emeksan/fujiyama.png" alt="Fujiyama Soba">
+          <div class="brand-name">Fujiyama Soba</div>
+        </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
-            <div class="client-item Hoşseven Soba">
-              <img src="assets/emeksan/hosseven.png" class="img-fluid" alt="Client 6">
-            </div>
-          </div>
+        <div class="swiper-slide brand-slide">
+          <img src="assets/img/emeksan/hosseven.png" alt="HoşSeven Soba">
+          <div class="brand-name">HoşSeven Soba</div>
         </div>
 
       </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-    </section>
+  </div>
+</section>
 
     <!-- Features Section -->
     <section id="features" class="features section">
