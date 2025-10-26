@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17540843135"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17540843135');
+    </script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Emeksan Mühendislik</title>
@@ -58,8 +67,9 @@
         <div class="nav-wrap">
             <div class="container d-flex justify-content-center position-relative">
                 <nav id="navmenu" class="navmenu">
-                    <ul><li><a href="/#hero" class="active">Anasayfa</a></li>
-                        
+                    <ul>
+                        <li><a href="/#hero" class="active">Anasayfa</a></li>
+
                         <li><a href="/#about">Hakkımızda</a></li>
                         <li><a href="/#services">Hizmetlerimiz</a></li>
                         <li><a href="/#features">Sürecimiz</a></li>
@@ -966,17 +976,18 @@
 
                                 <form id="consultation" method="post" class="php-email-form">
                                     <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-input" placeholder="Ad Soyad"
-                                            required="">
+                                        <input type="text" name="name" id="name" class="form-input"
+                                            placeholder="Ad Soyad" required="">
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-input" placeholder="E-posta Adresi"
-                                            required="">
+                                        <input type="email" name="email" id="email" class="form-input"
+                                            placeholder="E-posta Adresi" required="">
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="tel" name="phone" id="phone" class="form-input" placeholder="Telefon Numarası">
+                                        <input type="tel" name="phone" id="phone" class="form-input"
+                                            placeholder="Telefon Numarası">
                                     </div>
 
                                     <input type="hidden" name="subject"
@@ -984,13 +995,13 @@
 
                                     <div class="form-group">
                                         <textarea name="message" id="message" class="form-input" rows="4"
-                                            placeholder="Kısaca ihtiyaçlarınızı anlatın..."
-                                            required=""></textarea>
+                                            placeholder="Kısaca ihtiyaçlarınızı anlatın..." required=""></textarea>
                                     </div>
 
                                     <div class="loading">Loading</div>
                                     <div class="error-message" id="error-message"></div>
-                                    <div class="sent-message" id="sent-message">Danışmanlık talebiniz iletildi. Teşekkür ederiz!</div>
+                                    <div class="sent-message" id="sent-message">Danışmanlık talebiniz iletildi. Teşekkür
+                                        ederiz!</div>
 
                                     <button type="submit" class="btn-consultation">
                                         <span>Ücretsiz Danışmanlık Alın</span>
@@ -1055,7 +1066,7 @@
                     </div>
                 </div>
 
-                
+
 
                 <div class="col-lg-4">
                     <div class="footer-contact">
@@ -1081,7 +1092,8 @@
 
                         <div class="social-links">
                             <a href="https://www.instagram.com/emeksanmuhendislik"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/emeksan-m%C3%BChendislik/"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/company/emeksan-m%C3%BChendislik/"><i
+                                    class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1134,10 +1146,10 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-  <!-- Senin JS dosyan -->
-  <script src="assets/js/consultation.js"></script>
+    <!-- Senin JS dosyan -->
+    <script src="assets/js/consultation.js"></script>
 </body>
 
 </html>
