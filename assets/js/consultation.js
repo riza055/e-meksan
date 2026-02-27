@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("Gönderim başarılı ✅", response);
                 document.getElementById("sent-message").style.display = 'block';
                 document.getElementById("error-message").style.display = "none";
+                gtag('event', 'conversion', { 'send_to': 'AW-17540843135/LNFCCJy6mKkbEP-MkKxB' });
                 form.reset();
             }, function (error) {
                 console.error("Hata oluştu ❌", error);

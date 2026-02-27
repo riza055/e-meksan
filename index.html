@@ -2,15 +2,7 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17540843135"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'AW-17540843135');
-  </script>
 
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -39,6 +31,15 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17540843135"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17540843135');
+  </script>
 </head>
 
 <body class="index-page">
@@ -174,11 +175,11 @@
 
     </section><!-- /About Section -->
 
-   <section id="clients" class="clients section">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <section id="clients" class="clients section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
         {
           "loop": true,
           "speed": 600,
@@ -192,49 +193,49 @@
         }
       </script>
 
-      <div class="swiper-wrapper">
+          <div class="swiper-wrapper">
 
-        <div class="swiper-slide brand-slide">
-          <img src="assets/img/emeksan/demirdokum.png" alt="Demirdöküm">
-          <div class="brand-name">Demirdöküm</div>
-        </div>
+            <div class="swiper-slide brand-slide">
+              <img src="assets/img/emeksan/demirdokum.png" alt="Demirdöküm">
+              <div class="brand-name">Demirdöküm</div>
+            </div>
 
-        <div class="swiper-slide brand-slide">
-          <img src="assets/img/emeksan/vaillant.webp" alt="Vaillant">
-          <div class="brand-name">Vaillant</div>
-        </div>
+            <div class="swiper-slide brand-slide">
+              <img src="assets/img/emeksan/vaillant.webp" alt="Vaillant">
+              <div class="brand-name">Vaillant</div>
+            </div>
 
-        <div class="swiper-slide brand-slide">
-          <img src="assets/img/emeksan/warmhaus.png" alt="Warmhaus">
-          <div class="brand-name">Warmhaus</div>
-        </div>
+            <div class="swiper-slide brand-slide">
+              <img src="assets/img/emeksan/warmhaus.png" alt="Warmhaus">
+              <div class="brand-name">Warmhaus</div>
+            </div>
 
-        <div class="swiper-slide brand-slide">
-          <img src="assets/img/emeksan/kalde.png" alt="Kalde Vana">
-          <div class="brand-name">Kalde Vana</div>
-        </div>
+            <div class="swiper-slide brand-slide">
+              <img src="assets/img/emeksan/kalde.png" alt="Kalde Vana">
+              <div class="brand-name">Kalde Vana</div>
+            </div>
 
-        <div class="swiper-slide brand-slide">
-          <img src="assets/img/emeksan/borusan-boru.png" alt="Borusan Boru">
-          <div class="brand-name">Borusan Boru</div>
-        </div>
+            <div class="swiper-slide brand-slide">
+              <img src="assets/img/emeksan/borusan-boru.png" alt="Borusan Boru">
+              <div class="brand-name">Borusan Boru</div>
+            </div>
 
-        <div class="swiper-slide brand-slide">
-          <img src="assets/img/emeksan/fujiyama.png" alt="Fujiyama Soba">
-          <div class="brand-name">Fujiyama Soba</div>
-        </div>
+            <div class="swiper-slide brand-slide">
+              <img src="assets/img/emeksan/fujiyama.png" alt="Fujiyama Soba">
+              <div class="brand-name">Fujiyama Soba</div>
+            </div>
 
-        <div class="swiper-slide brand-slide">
-          <img src="assets/img/emeksan/hosseven.png" alt="HoşSeven Soba">
-          <div class="brand-name">HoşSeven Soba</div>
+            <div class="swiper-slide brand-slide">
+              <img src="assets/img/emeksan/hosseven.png" alt="HoşSeven Soba">
+              <div class="brand-name">HoşSeven Soba</div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <!-- Features Section -->
     <section id="features" class="features section">
@@ -305,8 +306,10 @@
                         <span>+90 (533) 366 67 41</span>
                       </div>
                       <div class="point-item">
-                        <a href="https://wa.me/905333666741" class="bi bi-whatsapp">
-                          <span> Whatsapp üzerinden ulaşmak için tıklayabilirsiniz</span>
+                        <a href="https://wa.me/905333666741"
+                          onclick="return gtag_report_conversion('https://wa.me/905333666741');" class="bi bi-whatsapp">
+                        </a>
+                        <span> Whatsapp üzerinden ulaşmak için tıklayabilirsiniz</span>
                         </a>
                       </div>
                       <div class="point-item">
@@ -1599,7 +1602,7 @@
                 <div class="my-3">
                   <div class="loading" style="display: none;">Yükleniyor</div>
                   <div class="error-message" id="error-message"></div>
-                  <div class="sent-message" id="sent-message" style="display: npne;">Mesajınız başarılı şekilde
+                  <div class="sent-message" id="sent-message" style="display: none;">Mesajınız başarılı şekilde
                     iletildi. Teşekkür
                     Ederiz!</div>
                 </div>
@@ -1639,7 +1642,9 @@
                   <div class="contact-details">
                     <a href="tel:5464933220">
                       <span class="method-label">Telefon Numaramız</span>
-                      <p>+90 (533) 366-6741</p>
+                      <a href="tel:+905333666741" onclick="return gtag_report_conversion('tel:+905333666741');">
+                        +90 (533) 366-6741
+                      </a>
                     </a>
                   </div>
                 </div>
@@ -1735,7 +1740,9 @@
                   <i class="bi bi-telephone"></i>
                 </div>
                 <div class="contact-info">
-                  <p>+90 (533) 366-6741</p>
+                  <a href="tel:+905333666741" onclick="return gtag_report_conversion('tel:+905333666741');">
+                    +90 (533) 366-6741
+                  </a>
                 </div>
 
               </div>
@@ -1810,6 +1817,34 @@
   <!-- Senin JS dosyan -->
   <script src="assets/js/contact.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contact-form");
+      const sentMsg = document.getElementById("sent-message");
+
+      if (!form) return;
+
+      // 1) Submit olduğunda hemen saymak istersen (risk: başarısızda da sayabilir)
+      // form.addEventListener("submit", () => {
+      //   gtag('event', 'conversion', {'send_to': 'AW-17540843135/LNFCCJy6mKkbEP-MkKxB'});
+      // });
+
+      // 2) DOĞRU: "Mesaj iletildi" görünür olunca say (başarı anı)
+      if (sentMsg) {
+        const obs = new MutationObserver(() => {
+          const style = window.getComputedStyle(sentMsg);
+          const isVisible = style.display !== "none" && style.visibility !== "hidden" && sentMsg.offsetHeight > 0;
+
+          if (isVisible && !sentMsg.dataset.convSent) {
+            sentMsg.dataset.convSent = "1";
+            gtag('event', 'conversion', { 'send_to': 'AW-17540843135/LNFCCJy6mKkbEP-MkKxB' });
+          }
+        });
+
+        obs.observe(sentMsg, { attributes: true, attributeFilter: ["style", "class"] });
+      }
+    });
+  </script>
 </body>
 
 </html>
