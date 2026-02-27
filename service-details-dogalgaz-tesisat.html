@@ -37,6 +37,20 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17540843135/LNFCCJy6mKkbEP-MkKxB',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
 
 </head>
 
